@@ -1,1 +1,3 @@
+gfpgan
+realesrgan
 GitPython
