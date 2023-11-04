@@ -23,10 +23,6 @@ from .modules.install_script import \
 from .modules.paths import comfy_path
 from .modules.tools import fetch_data
 
-from .modules.custom_nodes import \
-    NODE_MAPPINGS, \
-    NODE_NAME_MAPPINGS
-
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 自定义节点管理
@@ -247,6 +243,5 @@ async def view_model(request):
     return web.Response(status=404)
 
 
-NODE_CLASS_MAPPINGS = NODE_MAPPINGS
-NODE_DISPLAY_NAME_MAPPINGS = NODE_NAME_MAPPINGS
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
+NODE_CLASS_MAPPINGS = {}
+__all__ = ['NODE_CLASS_MAPPINGS']
