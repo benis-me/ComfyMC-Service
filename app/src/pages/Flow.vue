@@ -8,11 +8,7 @@
       @on-make-app-click="onMakeAppClick"
     />
     <section class="editor-container">
-      <iframe
-        ref="iframeRef"
-        :class="{ loading }"
-        src="http://127.0.0.1:8188"
-      />
+      <iframe ref="iframeRef" :class="{ loading }" :src="apiBase" />
       <div
         v-if="loading"
         class="absolute inset-0 flex items-center justify-center z-50"
